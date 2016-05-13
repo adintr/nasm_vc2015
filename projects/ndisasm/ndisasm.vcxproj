@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{167F17D9-B850-4097-9EFD-77D9DB133378}</ProjectGuid>
+    <ProjectGuid>{F172F72B-E221-4A7C-92B4-2B8EC8D32BC2}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>nasm</RootNamespace>
+    <RootNamespace>ndisasm</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -146,88 +146,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\assemble.c" />
-    <ClCompile Include="..\..\src\crc64.c" />
-    <ClCompile Include="..\..\src\directiv.c" />
+    <ClCompile Include="..\..\src\disasm.c" />
     <ClCompile Include="..\..\src\disp8.c" />
-    <ClCompile Include="..\..\src\eval.c" />
-    <ClCompile Include="..\..\src\exprlib.c" />
-    <ClCompile Include="..\..\src\float.c" />
-    <ClCompile Include="..\..\src\hashtbl.c" />
     <ClCompile Include="..\..\src\iflag.c" />
-    <ClCompile Include="..\..\src\ilog2.c" />
-    <ClCompile Include="..\..\src\insnsa.c" />
     <ClCompile Include="..\..\src\insnsb.c" />
-    <ClCompile Include="..\..\src\labels.c" />
-    <ClCompile Include="..\..\src\lib\strlcpy.c" />
-    <ClCompile Include="..\..\src\listing.c" />
-    <ClCompile Include="..\..\src\macros.c" />
-    <ClCompile Include="..\..\src\md5c.c" />
-    <ClCompile Include="..\..\src\nasm.c" />
+    <ClCompile Include="..\..\src\insnsd.c" />
+    <ClCompile Include="..\..\src\insnsn.c" />
     <ClCompile Include="..\..\src\nasmlib.c" />
-    <ClCompile Include="..\..\src\output\codeview.c" />
-    <ClCompile Include="..\..\src\output\nulldbg.c" />
-    <ClCompile Include="..\..\src\output\nullout.c" />
-    <ClCompile Include="..\..\src\output\outaout.c" />
-    <ClCompile Include="..\..\src\output\outas86.c" />
-    <ClCompile Include="..\..\src\output\outbin.c" />
-    <ClCompile Include="..\..\src\output\outcoff.c" />
-    <ClCompile Include="..\..\src\output\outdbg.c" />
-    <ClCompile Include="..\..\src\output\outelf.c" />
-    <ClCompile Include="..\..\src\output\outelf32.c" />
-    <ClCompile Include="..\..\src\output\outelf64.c" />
-    <ClCompile Include="..\..\src\output\outelfx32.c" />
-    <ClCompile Include="..\..\src\output\outform.c" />
-    <ClCompile Include="..\..\src\output\outieee.c" />
-    <ClCompile Include="..\..\src\output\outlib.c" />
-    <ClCompile Include="..\..\src\output\outmacho.c" />
-    <ClCompile Include="..\..\src\output\outobj.c" />
-    <ClCompile Include="..\..\src\output\outrdf2.c" />
-    <ClCompile Include="..\..\src\parser.c" />
-    <ClCompile Include="..\..\src\pptok.c" />
-    <ClCompile Include="..\..\src\preproc-nop.c" />
-    <ClCompile Include="..\..\src\preproc.c" />
-    <ClCompile Include="..\..\src\quote.c" />
-    <ClCompile Include="..\..\src\raa.c" />
-    <ClCompile Include="..\..\src\rbtree.c" />
-    <ClCompile Include="..\..\src\realpath.c" />
-    <ClCompile Include="..\..\src\regflags.c" />
-    <ClCompile Include="..\..\src\regvals.c" />
-    <ClCompile Include="..\..\src\saa.c" />
-    <ClCompile Include="..\..\src\stdscan.c" />
-    <ClCompile Include="..\..\src\strfunc.c" />
-    <ClCompile Include="..\..\src\tokhash.c" />
+    <ClCompile Include="..\..\src\ndisasm.c" />
+    <ClCompile Include="..\..\src\regdis.c" />
+    <ClCompile Include="..\..\src\regs.c" />
+    <ClCompile Include="..\..\src\sync.c" />
     <ClCompile Include="..\..\src\ver.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\assemble.h" />
-    <ClInclude Include="..\..\src\compiler.h" />
-    <ClInclude Include="..\..\src\directiv.h" />
+    <ClInclude Include="..\..\src\disasm.h" />
     <ClInclude Include="..\..\src\disp8.h" />
-    <ClInclude Include="..\..\src\eval.h" />
-    <ClInclude Include="..\..\src\float.h" />
-    <ClInclude Include="..\..\src\hashtbl.h" />
     <ClInclude Include="..\..\src\iflag.h" />
     <ClInclude Include="..\..\src\insns.h" />
-    <ClInclude Include="..\..\src\labels.h" />
-    <ClInclude Include="..\..\src\listing.h" />
-    <ClInclude Include="..\..\src\md5.h" />
-    <ClInclude Include="..\..\src\nasm.h" />
     <ClInclude Include="..\..\src\nasmlib.h" />
-    <ClInclude Include="..\..\src\output\elf.h" />
-    <ClInclude Include="..\..\src\output\outelf.h" />
-    <ClInclude Include="..\..\src\output\outform.h" />
-    <ClInclude Include="..\..\src\output\outlib.h" />
-    <ClInclude Include="..\..\src\parser.h" />
-    <ClInclude Include="..\..\src\pptok.h" />
-    <ClInclude Include="..\..\src\preproc.h" />
-    <ClInclude Include="..\..\src\quote.h" />
-    <ClInclude Include="..\..\src\raa.h" />
-    <ClInclude Include="..\..\src\rbtree.h" />
-    <ClInclude Include="..\..\src\saa.h" />
-    <ClInclude Include="..\..\src\stdscan.h" />
-    <ClInclude Include="..\..\src\tables.h" />
-    <ClInclude Include="..\..\src\tokens.h" />
+    <ClInclude Include="..\..\src\regdis.h" />
+    <ClInclude Include="..\..\src\regs.h" />
+    <ClInclude Include="..\..\src\sync.h" />
     <ClInclude Include="..\..\src\version.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

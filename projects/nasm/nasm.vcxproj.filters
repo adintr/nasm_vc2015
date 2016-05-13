@@ -254,5 +254,8 @@
     <ClInclude Include="..\..\src\saa.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\compiler.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
