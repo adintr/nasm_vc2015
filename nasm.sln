@@ -7,6 +7,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nasm", "projects\nasm\nasm.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ndisasm", "projects\ndisasm\ndisasm.vcxproj", "{F172F72B-E221-4A7C-92B4-2B8EC8D32BC2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "origin [原始程序]", "origin [原始程序]", "{50E7BFC7-CEF0-4E53-AAF4-82DABB87DE6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zplib [导出库]", "zplib [导出库]", "{3585573D-973B-4F67-85EB-2EAA4E616B70}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nasmlib", "projects\nasmlib\nasmlib.vcxproj", "{F96CC78E-7887-41A6-A0F2-DAA73E7C2076}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,8 +37,21 @@ Global
 		{F172F72B-E221-4A7C-92B4-2B8EC8D32BC2}.Release|x64.Build.0 = Release|x64
 		{F172F72B-E221-4A7C-92B4-2B8EC8D32BC2}.Release|x86.ActiveCfg = Release|Win32
 		{F172F72B-E221-4A7C-92B4-2B8EC8D32BC2}.Release|x86.Build.0 = Release|Win32
+		{F96CC78E-7887-41A6-A0F2-DAA73E7C2076}.Debug|x64.ActiveCfg = Debug|x64
+		{F96CC78E-7887-41A6-A0F2-DAA73E7C2076}.Debug|x64.Build.0 = Debug|x64
+		{F96CC78E-7887-41A6-A0F2-DAA73E7C2076}.Debug|x86.ActiveCfg = Debug|Win32
+		{F96CC78E-7887-41A6-A0F2-DAA73E7C2076}.Debug|x86.Build.0 = Debug|Win32
+		{F96CC78E-7887-41A6-A0F2-DAA73E7C2076}.Release|x64.ActiveCfg = Release|x64
+		{F96CC78E-7887-41A6-A0F2-DAA73E7C2076}.Release|x64.Build.0 = Release|x64
+		{F96CC78E-7887-41A6-A0F2-DAA73E7C2076}.Release|x86.ActiveCfg = Release|Win32
+		{F96CC78E-7887-41A6-A0F2-DAA73E7C2076}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{167F17D9-B850-4097-9EFD-77D9DB133378} = {50E7BFC7-CEF0-4E53-AAF4-82DABB87DE6F}
+		{F172F72B-E221-4A7C-92B4-2B8EC8D32BC2} = {50E7BFC7-CEF0-4E53-AAF4-82DABB87DE6F}
+		{F96CC78E-7887-41A6-A0F2-DAA73E7C2076} = {3585573D-973B-4F67-85EB-2EAA4E616B70}
 	EndGlobalSection
 EndGlobal
