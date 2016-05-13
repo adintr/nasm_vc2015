@@ -30,3 +30,12 @@
 
 # Debug files
 *.dSYM/
+
+
+# VS temp files
+.vs/
+**/Debug/*
+**/Release/*
+
+# Compile files
+bin/
