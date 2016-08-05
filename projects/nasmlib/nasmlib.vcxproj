@@ -20,9 +20,92 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\nasmlib\include\nasmlib.h" />
+    <ClInclude Include="..\..\src\assemble.h" />
+    <ClInclude Include="..\..\src\compiler.h" />
+    <ClInclude Include="..\..\src\directiv.h" />
+    <ClInclude Include="..\..\src\disasm.h" />
+    <ClInclude Include="..\..\src\disp8.h" />
+    <ClInclude Include="..\..\src\eval.h" />
+    <ClInclude Include="..\..\src\float.h" />
+    <ClInclude Include="..\..\src\hashtbl.h" />
+    <ClInclude Include="..\..\src\iflag.h" />
+    <ClInclude Include="..\..\src\insns.h" />
+    <ClInclude Include="..\..\src\labels.h" />
+    <ClInclude Include="..\..\src\listing.h" />
+    <ClInclude Include="..\..\src\md5.h" />
+    <ClInclude Include="..\..\src\nasm.h" />
+    <ClInclude Include="..\..\src\nasmlib.h" />
+    <ClInclude Include="..\..\src\output\elf.h" />
+    <ClInclude Include="..\..\src\output\outelf.h" />
+    <ClInclude Include="..\..\src\output\outform.h" />
+    <ClInclude Include="..\..\src\output\outlib.h" />
+    <ClInclude Include="..\..\src\parser.h" />
+    <ClInclude Include="..\..\src\pptok.h" />
+    <ClInclude Include="..\..\src\preproc.h" />
+    <ClInclude Include="..\..\src\quote.h" />
+    <ClInclude Include="..\..\src\raa.h" />
+    <ClInclude Include="..\..\src\rbtree.h" />
+    <ClInclude Include="..\..\src\saa.h" />
+    <ClInclude Include="..\..\src\stdscan.h" />
+    <ClInclude Include="..\..\src\tables.h" />
+    <ClInclude Include="..\..\src\tokens.h" />
+    <ClInclude Include="..\..\src\version.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\nasmlib\wapper_src\nasmlib.cpp" />
+    <ClCompile Include="..\..\src\assemble.c" />
+    <ClCompile Include="..\..\src\crc64.c" />
+    <ClCompile Include="..\..\src\directiv.c" />
+    <ClCompile Include="..\..\src\disasm.c" />
+    <ClCompile Include="..\..\src\disp8.c" />
+    <ClCompile Include="..\..\src\eval.c" />
+    <ClCompile Include="..\..\src\exprlib.c" />
+    <ClCompile Include="..\..\src\float.c" />
+    <ClCompile Include="..\..\src\hashtbl.c" />
+    <ClCompile Include="..\..\src\iflag.c" />
+    <ClCompile Include="..\..\src\ilog2.c" />
+    <ClCompile Include="..\..\src\insnsa.c" />
+    <ClCompile Include="..\..\src\insnsb.c" />
+    <ClCompile Include="..\..\src\labels.c" />
+    <ClCompile Include="..\..\src\lib\strlcpy.c" />
+    <ClCompile Include="..\..\src\listing.c" />
+    <ClCompile Include="..\..\src\macros.c" />
+    <ClCompile Include="..\..\src\md5c.c" />
+    <ClCompile Include="..\..\src\nasm.c" />
+    <ClCompile Include="..\..\src\nasmlib.c" />
+    <ClCompile Include="..\..\src\output\codeview.c" />
+    <ClCompile Include="..\..\src\output\nulldbg.c" />
+    <ClCompile Include="..\..\src\output\nullout.c" />
+    <ClCompile Include="..\..\src\output\outaout.c" />
+    <ClCompile Include="..\..\src\output\outas86.c" />
+    <ClCompile Include="..\..\src\output\outbin.c" />
+    <ClCompile Include="..\..\src\output\outcoff.c" />
+    <ClCompile Include="..\..\src\output\outdbg.c" />
+    <ClCompile Include="..\..\src\output\outelf.c" />
+    <ClCompile Include="..\..\src\output\outelf32.c" />
+    <ClCompile Include="..\..\src\output\outelf64.c" />
+    <ClCompile Include="..\..\src\output\outelfx32.c" />
+    <ClCompile Include="..\..\src\output\outform.c" />
+    <ClCompile Include="..\..\src\output\outieee.c" />
+    <ClCompile Include="..\..\src\output\outlib.c" />
+    <ClCompile Include="..\..\src\output\outmacho.c" />
+    <ClCompile Include="..\..\src\output\outobj.c" />
+    <ClCompile Include="..\..\src\output\outrdf2.c" />
+    <ClCompile Include="..\..\src\parser.c" />
+    <ClCompile Include="..\..\src\pptok.c" />
+    <ClCompile Include="..\..\src\preproc-nop.c" />
+    <ClCompile Include="..\..\src\preproc.c" />
+    <ClCompile Include="..\..\src\quote.c" />
+    <ClCompile Include="..\..\src\raa.c" />
+    <ClCompile Include="..\..\src\rbtree.c" />
+    <ClCompile Include="..\..\src\realpath.c" />
+    <ClCompile Include="..\..\src\regflags.c" />
+    <ClCompile Include="..\..\src\regvals.c" />
+    <ClCompile Include="..\..\src\saa.c" />
+    <ClCompile Include="..\..\src\stdscan.c" />
+    <ClCompile Include="..\..\src\strfunc.c" />
+    <ClCompile Include="..\..\src\tokhash.c" />
+    <ClCompile Include="..\..\src\ver.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F96CC78E-7887-41A6-A0F2-DAA73E7C2076}</ProjectGuid>
@@ -77,11 +160,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)nasmlib\libs\</OutDir>
-    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)nasmlib\libs\</OutDir>
-    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+    <OutDir>$(SolutionDir)nasmlib\libs\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+    <OutDir>$(SolutionDir)nasmlib\libs\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -90,6 +181,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4146;4996;4819;4267</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -102,6 +195,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4244;4146;4996;4819;4267</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -116,6 +211,8 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4146;4996;4819;4267</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -132,6 +229,8 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4244;4146;4996;4819;4267</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

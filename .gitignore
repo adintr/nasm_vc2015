@@ -35,6 +35,8 @@
 # VS temp files
 .vs/
 *.user
+*.sdf
+*.opensdf
 **/Debug/*
 **/Release/*
 

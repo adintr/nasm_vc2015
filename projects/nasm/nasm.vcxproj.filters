@@ -12,51 +12,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\nasm.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\nasmlib.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\raa.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\rbtree.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\realpath.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\ver.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\assemble.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\crc64.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\directiv.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\float.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\hashtbl.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\insnsa.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\insnsb.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\labels.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\parser.c">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\output\nulldbg.c">
       <Filter>src\output</Filter>
     </ClCompile>
@@ -105,6 +60,24 @@
     <ClCompile Include="..\..\src\output\codeview.c">
       <Filter>src\output</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\lib\strlcpy.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\output\outas86.c">
+      <Filter>src\output</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\output\outrdf2.c">
+      <Filter>src\output</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\assemble.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crc64.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\directiv.c">
+      <Filter>src</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\src\disp8.c">
       <Filter>src</Filter>
     </ClCompile>
@@ -114,10 +87,25 @@
     <ClCompile Include="..\..\src\exprlib.c">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\float.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hashtbl.c">
+      <Filter>src</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\src\iflag.c">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\ilog2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\insnsa.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\insnsb.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\labels.c">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\listing.c">
@@ -127,6 +115,15 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\md5c.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nasm.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nasmlib.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\parser.c">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\pptok.c">
@@ -141,10 +138,22 @@
     <ClCompile Include="..\..\src\quote.c">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\raa.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rbtree.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\realpath.c">
+      <Filter>src</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\src\regflags.c">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\regvals.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\saa.c">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\stdscan.c">
@@ -156,56 +165,11 @@
     <ClCompile Include="..\..\src\tokhash.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lib\strlcpy.c">
-      <Filter>src\lib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\saa.c">
+    <ClCompile Include="..\..\src\ver.c">
       <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\output\outas86.c">
-      <Filter>src\output</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\output\outrdf2.c">
-      <Filter>src\output</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\nasm.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\nasmlib.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\raa.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\rbtree.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\version.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\assemble.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\directiv.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\float.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\hashtbl.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\insns.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\labels.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\parser.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\src\output\elf.h">
       <Filter>src\output</Filter>
     </ClInclude>
@@ -218,19 +182,52 @@
     <ClInclude Include="..\..\src\output\outlib.h">
       <Filter>src\output</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\version.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\assemble.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\compiler.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\directiv.h">
+      <Filter>src</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\src\disp8.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\eval.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\float.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hashtbl.h">
+      <Filter>src</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\src\iflag.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\insns.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\labels.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\listing.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\md5.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nasm.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nasmlib.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\parser.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\pptok.h">
@@ -242,6 +239,15 @@
     <ClInclude Include="..\..\src\quote.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\raa.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rbtree.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\saa.h">
+      <Filter>src</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\src\stdscan.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -249,12 +255,6 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\tokens.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\saa.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\compiler.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
